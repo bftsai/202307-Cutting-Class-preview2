@@ -119,6 +119,7 @@ img{
 .content .content-choice ul li{
 	max-width: 300px;
 	text-align: center;
+	border: 1px solid #EAF0ED;
 }
 .content .content-choice .content-choice-title{
 	font-family: PingFang TC, Semibold;
@@ -137,4 +138,7 @@ img{
 	text-decoration: none;
 	display: block;
 	line-height: 56px;
+}
+.content .content-choice ul li a:hover{
+	background: #EAF0ED 0% 0% no-repeat padding-box;
 }
