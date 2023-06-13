@@ -85,8 +85,11 @@ img{
 	margin: 0 0 0 62.87%;
 	width: 29.3618%;
 }
+/*
 .header .header-menu{
+
 }
+*/
 .header .header-menu li{
 	width: 100%;
 }
@@ -99,9 +102,7 @@ img{
 	text-align: center;
 	text-decoration: none;
 	/*
-	width: 92px;
 	max-width: 92px;
-	padding: 10px 30px 8px;
 	*/
 }
 
@@ -117,16 +118,23 @@ img{
 	white-space: nowrap;
 	padding: 9px 0 7px;
 }
-.content{
-
-}
-.content .content-banner{
+.banner{
 	height: 496px;
 	background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/banner.png?raw=true) center center no-repeat;
 	margin: 0px 0px 60px 0px;
 }
+
+.content{
+	display: flex;
+	justify-content: space-between;
+	max-width: 940px;
+}
+
+.content .content-choice{
+	width: 31.915%;
+}
 .content .content-choice ul li{
-	max-width: 300px;
+	width: 100%;
 	text-align: center;
 	border: 1px solid #EAF0ED;
 }
@@ -149,5 +157,107 @@ img{
 	line-height: 56px;
 }
 .content .content-choice ul li a:hover{
-	background: #EAF0ED 0% 0% no-repeat padding-box;
+	background: #EAF0ED;
+}
+.content .content-product{
+	width: 65.95745%;
+}
+.content .content-product .content-product-item{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.content .content-product .content-product-item li{
+	border: 1px solid #EAF0ED;
+	width: 48.3875%;
+	margin-bottom: 20px;
+	position: relative;
+}
+.content .content-product .content-product-special{
+	writing-mode: vertical-lr;
+	position: absolute;
+	left: 6.667%;
+	background: #3F5D45;
+	font-size: 16px;
+	letter-spacing: 4px;
+	padding: 13.3665px 0;
+	line-height: 36px;
+	color: #EAF0ED;
+}
+.content .content-product .content-product-item li img{
+	width: 100%;
+	height: auto;
+}
+.content .content-product .content-product-title{
+	display: flex;
+	justify-content: space-between;
+	line-height: 56px;
+}
+.content .content-product .content-product-title .content-product-name{
+	width: 57.667%;
+	font-family: PingFang TC, Light;
+	font-size: 20px;
+	text-align: center;
+	color: #3F5D45;
+}
+.content .content-product .content-product-title .content-product-price{
+	width: 42%;
+	font-family: PingFang TC, Light;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	color: #3F5D45;
+	border-left: 1px solid #EAF0ED;
+}
+.content .content-product .content-product-item li a{
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	text-align: center;
+	font-family: PingFang TC, Semibold;
+	font-size: 24px;
+	line-height: 56px;
+	font-weight: bold;
+	color: #3F5D45;
+	background: #EAF0ED;
+}
+.content .content-product .content-product-nextbutton{
+	width: 48.3875%;
+	display: flex;
+	border: 1px solid #EAF0ED;
+	border-right: 0px;
+}
+.content .content-product .content-product-nextbutton li{
+	width: 100%;
+	border-right: 1px solid #EAF0ED;
+}
+.content .content-product .content-product-nextbutton .back a{
+	display: block;
+	line-height: 60px;
+	background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_left.png?raw=true) center center no-repeat;
+	text-indent: 200%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.content .content-product .content-product-nextbutton .next a{
+	display: block;
+	line-height: 60px;
+	background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_right.png?raw=true) center center no-repeat;
+	text-indent: 200%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.content .content-product .content-product-nextbutton .normal a{
+	display: block;
+	text-decoration: none;
+	font-family: PingFang TC, Light;
+	font-size: 20px;
+	line-height: 60px;
+	text-align: center;
+	color: #3F5D45;
+}
+.content .content-product .content-product-nextbutton .normal a:hover{
+	color: #EAF0ED;
+	background: #3F5D45;
 }
