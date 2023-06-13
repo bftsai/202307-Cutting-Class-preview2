@@ -47,11 +47,14 @@ table {
 	border-spacing: 0;
 }
 
-*,*::before,*::after{
-    box-sizing: border-box;
-}
+/*
 *{
 	outline: 1px solid black;
+}
+*/
+
+*,*::before,*::after{
+    box-sizing: border-box;
 }
 img{
     max-width: 100%;
@@ -60,10 +63,14 @@ img{
 .wrap{
 	max-width: 1024px;
 	margin: 0 auto;
+	/*
 	padding: 0 42px;
+	*/
+	background: #FFFFFF;
+	box-shadow: 0 0 3px black;
 }
 .header{
-	padding: 30px 0;
+	padding: 30px 42px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -85,11 +92,6 @@ img{
 	margin: 0 0 0 62.87%;
 	width: 29.3618%;
 }
-/*
-.header .header-menu{
-
-}
-*/
 .header .header-menu li{
 	width: 100%;
 }
@@ -98,20 +100,24 @@ img{
 	color: #3F5D45;
 	font-family: PingFang TC, Semibold;
 	font-size: 16px;
-	line-height: 22px;
+	line-height: 40px;
+	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
 	/*
 	max-width: 92px;
 	*/
 }
-
+.header .header-menu li a:hover{
+	border-bottom: 3px solid #3F5D45;
+	line-height: 37px;
+}
 .header .header-shopcar{
 	position: absolute;
-	right: 0px;
-	background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true) center center no-repeat;
-	width: 24px;
-	font-size: 24px;
+	right: 42px;
+	background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true) 100% center no-repeat;
+	width: 40px;
+	font-size: 40px;
 	display: block;
 	text-indent: 200%;
 	overflow: hidden;
@@ -127,7 +133,8 @@ img{
 .content{
 	display: flex;
 	justify-content: space-between;
-	max-width: 940px;
+	max-width: 1024px;
+	padding: 0 42px 60px;
 }
 
 .content .content-choice{
@@ -150,6 +157,7 @@ img{
 .content .content-choice ul li a{
 	font-family: PingFang TC, Semibold;
 	font-size: 24px;
+	font-weight: bold;
 	color: #3F5D45;
 	opacity: 1;
 	text-decoration: none;
@@ -161,6 +169,9 @@ img{
 }
 .content .content-product{
 	width: 65.95745%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 .content .content-product .content-product-item{
 	width: 100%;
@@ -184,6 +195,15 @@ img{
 	padding: 13.3665px 0;
 	line-height: 36px;
 	color: #EAF0ED;
+}
+.content .content-product .content-product-item .content-product-favorite{
+	position: absolute;
+	right: 7.33334%;
+	width: 6.699%;
+	background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true) center center no-repeat ;
+	text-indent: 200%;
+	overflow: hidden;
+	white-space: nowrap;
 }
 .content .content-product .content-product-item li img{
 	width: 100%;
@@ -224,6 +244,7 @@ img{
 }
 .content .content-product .content-product-nextbutton{
 	width: 48.3875%;
+	margin-top: 10px;
 	display: flex;
 	border: 1px solid #EAF0ED;
 	border-right: 0px;
@@ -260,4 +281,11 @@ img{
 .content .content-product .content-product-nextbutton .normal a:hover{
 	color: #EAF0ED;
 	background: #3F5D45;
+}
+.footer{
+	background: #EAF0ED;
+	padding: 100px 0;
+	font-size: 28px;
+	text-align: center;
+	font-weight: bold;
 }
