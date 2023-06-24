@@ -60,6 +60,10 @@ table {
 img{
     max-width: 100%;
     height: auto;
+	vertical-align: middle;
+}
+body{
+	font-family: PingFang TC, Semibold;
 }
 .wrap{
 	max-width: 1024px;
@@ -100,7 +104,8 @@ img{
 	color: #3F5D45;
 	font-family: PingFang TC, Semibold;
 	font-size: 16px;
-	line-height: 40px;
+	line-height: 22px;
+	padding: 10px 0 8px 0;
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
@@ -110,7 +115,7 @@ img{
 }
 .header .header-menu li a:hover{
 	border-bottom: 3px solid #3F5D45;
-	line-height: 37px;
+	padding: 10px 0 5px 0;
 }
 .header .header-shopcar{
 	position: absolute;
@@ -125,9 +130,7 @@ img{
 	padding: 9px 0 7px;
 }
 .banner{
-	height: 496px;
-	background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/banner.png?raw=true) center center no-repeat;
-	margin: 0px 0px 60px 0px;
+	margin: 0px 42px 60px;
 }
 
 .content{
@@ -140,14 +143,14 @@ img{
 	width: 31.9149%;
 }
 .content .content-choice .content-choice-title{
-	border-top: 1px solid #EAF0ED;
 	font-family: PingFang TC, Semibold;
 	font-size: 24px;
-	line-height: 56px;
+	line-height: 33px;
+	padding: 16px 101px;
 	text-align: center;
 	color: #EAF0ED;
 	background: #3F5D45;
-	opacity: 1;
+	letter-spacing: 0px;
 }
 .content .content-choice ul li{
 	text-align: center;
@@ -158,12 +161,14 @@ img{
 .content .content-choice ul li a{
 	font-family: PingFang TC, Semibold;
 	font-size: 24px;
-	font-weight: bold;
+	letter-spacing: 0px;
 	color: #3F5D45;
 	opacity: 1;
 	text-decoration: none;
 	display: block;
-	line-height: 56px;
+	line-height: 33px;
+	padding: 16px 63px 15px;
+	font-weight: 600;
 }
 .content .content-choice ul li a:hover{
 	background: #EAF0ED;
@@ -175,18 +180,18 @@ img{
 	align-items: flex-end;
 }
 .content .content-product .content-product-item{
-	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 .content .content-product .content-product-item li{
-	border: 1px solid #EAF0ED;
 	width: 48.3875%;
 	margin-bottom: 20px;
 	position: relative;
 }
 .content .content-product .content-product-special{
+	font-family: PingFang TC, Semibold;
+	font-weight: normal;
 	writing-mode: vertical-lr;
 	position: absolute;
 	left: 6.667%;
@@ -194,51 +199,58 @@ img{
 	font-size: 16px;
 	letter-spacing: 4px;
 	padding: 13.3665px 0;
-	line-height: 36px;
 	color: #EAF0ED;
+	padding: 10.08px 10px 9.24px;
 }
 .content .content-product .content-product-item .content-product-favorite{
 	position: absolute;
 	right: 7.33334%;
-	width: 6.699%;
+	top: 6.03%;
+	width: 6.66667%;
+	height: 4.2090737%;
 	background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true) center center no-repeat ;
+	display: block;
 	text-indent: 200%;
 	overflow: hidden;
 	white-space: nowrap;
 }
 .content .content-product .content-product-item li img{
-	width: 100%;
-	height: auto;
+	vertical-align: middle;
+	height: 315px;
 }
 .content .content-product .content-product-title{
 	display: flex;
 	justify-content: space-between;
-	line-height: 56px;
 }
 .content .content-product .content-product-title .content-product-name{
-	width: 57.667%;
 	font-family: PingFang TC, Light;
 	font-size: 20px;
+	line-height: 28px;
+	padding: 14px 33px 14px 32px;
 	text-align: center;
-	color: #3F5D45;
-}
-.content .content-product .content-product-title .content-product-price{
-	width: 42%;
-	font-family: PingFang TC, Light;
-	font-size: 20px;
-	text-align: center;
-	font-weight: bold;
 	color: #3F5D45;
 	border-left: 1px solid #EAF0ED;
 }
-.content .content-product .content-product-item li a{
+.content .content-product .content-product-title .content-product-price{
+	font-family: PingFang TC, Semibold;
+	font-size: 20px;
+	line-height: 28px;
+	padding: 14px 19px 14px 24px;
+	text-align: center;
+	font-weight: 600;
+	color: #3F5D45;
+	border-left: 1px solid #EAF0ED;
+	border-right: 1px solid #EAF0ED;
+}
+.content .content-product .content-product-item li .add-shopcar{
 	display: block;
 	width: 100%;
 	text-decoration: none;
 	text-align: center;
 	font-family: PingFang TC, Semibold;
 	font-size: 24px;
-	line-height: 56px;
+	line-height: 33px;
+	padding: 16px 90px;
 	font-weight: bold;
 	color: #3F5D45;
 	background: #EAF0ED;
@@ -247,16 +259,23 @@ img{
 	width: 48.3875%;
 	margin-top: 10px;
 	display: flex;
+	/*
 	border: 1px solid #EAF0ED;
 	border-right: 0px;
+	*/
 }
 .content .content-product .content-product-nextbutton li{
 	width: 100%;
-	border-right: 1px solid #EAF0ED;
+	border-style: solid;
+	border-color: #EAF0ED;
+	border-width: 1px 1px 1px 0;
+}
+.content .content-product .content-product-nextbutton .back{
+	border-left: 1px solid #EAF0ED;
 }
 .content .content-product .content-product-nextbutton .back a{
 	display: block;
-	line-height: 60px;
+	line-height: 58px;
 	background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_left.png?raw=true) center center no-repeat;
 	text-indent: 200%;
 	overflow: hidden;
@@ -264,7 +283,7 @@ img{
 }
 .content .content-product .content-product-nextbutton .next a{
 	display: block;
-	line-height: 60px;
+	line-height: 58px;
 	background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_right.png?raw=true) center center no-repeat;
 	text-indent: 200%;
 	overflow: hidden;
@@ -273,9 +292,10 @@ img{
 .content .content-product .content-product-nextbutton .normal a{
 	display: block;
 	text-decoration: none;
-	font-family: PingFang TC, Light;
+	font-family: PingFang TC, Semibold;
 	font-size: 20px;
-	line-height: 60px;
+	line-height: 28px;
+	padding: 15px 0;
 	text-align: center;
 	color: #3F5D45;
 }
@@ -285,8 +305,9 @@ img{
 }
 .footer{
 	background: #EAF0ED;
-	padding: 100px 0;
-	font-size: 28px;
+	padding: 200px 0;
+	font-size: 57px;
 	text-align: center;
 	font-weight: bold;
+	line-height: 1;
 }
